@@ -203,3 +203,106 @@ let film_and_tv = [
         correctAnswer: 3
     },
 ]
+
+let food_and_drink = [
+    {
+        question: "Which Vegetable Can Be Oyster, Chestnut, or Shitaki?",
+        options: ["Garlic", "Onion", "Cabbage", "Mushrooms "],
+        correctAnswer: 3
+    },
+    {
+        question: "A food labelled 'Florentine' is likely to contain which ingredient?",
+        options: ["Pork", "Mushroom", "Lemon", "Spinach"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these is a popular drink in The Dominican Republic?",
+        options: ["Gin", "Maotai", "Chibuku", "Mama Juana"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these dishes would you most expect to find in Russia?",
+        options: ["Larb", "Biryani", "Khachapuri", "Pelmeni"],
+        correctAnswer: 3
+    },
+    {
+        question: "What type of cheese is Parmigiano Reggiano?",
+        options: ["Cheddar", "Gouda", "Feta", "Parmesan"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which fruit is traditionally covered with toffee at a fairground?",
+        options: ["Blackberry", "Strawberry", "Banana", "Apple "],
+        correctAnswer: 3
+    },
+    {
+        question: "From which part of the world do apples originate?",
+        options: ["Southeast Asia", "North America", "Africa", "Central Asia"],
+        correctAnswer: 3
+    },
+    {
+        question: "Baked Alaska has meringue on the outside , what does the meringue cover?",
+        options: ["Custard", "Chocolate", "Consommé", "Ice cream "],
+        correctAnswer: 3
+    },
+    {
+        question: "What Fruit Is A Cantaloupe?",
+        options: ["Grape", "Apple", "Orange", "Melon"],
+        correctAnswer: 3
+    },
+    {
+        question: "How Are Tandoori Dishes Cooked?",
+        options: ["On a skewer", "Boiled", "Pureed", "In A Clay Oven"],
+        correctAnswer: 3
+    },
+    {
+        question: "From Which Fruit Is Grenadine Obtained?",
+        options: ["Mango", "Cranberry", "Raspberry", "Pomegranate "],
+        correctAnswer: 3
+    },
+    {
+        question: "What fruit allegedly keeps the doctor away if you eat one per day?",
+        options: ["Bananas", "Cherries", "Oranges", "Apples"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which type of seafood has varieties called Maine and spiny, and turns a vivid red only after it's been cooked?",
+        options: ["Crab", "Shrimp", "Clam", "Lobster"],
+        correctAnswer: 3
+    },
+    {
+        question: "What type of pasta is cannelloni?",
+        options: ["Strand pasta", "Stuffed pasta", "Shaped pasta", "Tubular pasta"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these drinks would you associate with Equador?",
+        options: ["Kumis", "Rakı", "Tuba", "Canelazo"],
+        correctAnswer: 3
+    },
+    {
+        question: "What Are The Ingredients Of A Harvey Wallbanger Cocktail?",
+        options: ["Gin, Ginger Beer, Lemon Juice", "Rum, Tequila, Tabasco Sauce, Soda", "Champagne, Espresso, Mint", "Vodka, Orange Juice, Galliano "],
+        correctAnswer: 3
+    },
+    {
+        question: "What type of pasta is capellini?",
+        options: ["Shaped pasta", "Soup pasta", "Stuffed pasta", "Strand pasta"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which country does one associate with 'Lussekatter'?",
+        options: ["Denmark", "Finland", "Norway", "Sweden "],
+        correctAnswer: 3
+    },
+    {
+        question: "Where in the world would you most expect to be served Kushari?",
+        options: ["Cambodia", "Turkey", "Benin", "Egypt"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which pasta's name means 'Little ribbons'?",
+        options: ["Orecchiette", "Lasagne", "Cavatappi", "Fettuccine"],
+        correctAnswer: 3
+    },
+]
