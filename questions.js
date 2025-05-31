@@ -919,3 +919,101 @@ let society_and_culture = [
         correctAnswer: 3
     },
 ]
+
+let sport_and_leisure = [
+    {
+        question: "What Surname Has Been Shared By Three Formula One Champions Of The 20th Century?",
+        options: ["Schumacher", "Hunt", "Villeneuve", "Hill"],
+        correctAnswer: 3
+    },
+    {
+        question: "The Indianapolis Colts",
+        options: ["The Dallas Cowboys", "The Pittsburgh Steelers", "The Oakland Raiders", "The Indianapolis Colts"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which NFL team, known for its fans' distinctive cheese wedge hats, is also nicknamed \"Cheeseheads\"?",
+        options: ["The Dallas Cowboys", "The Pittsburgh Steelers", "The New England Patriots", "The Green Bay Packers"],
+        correctAnswer: 3
+    },
+    {
+        question: "With which sport is Wilma Rudolph associated?",
+        options: ["Tennis", "Figure skating", "Swimming", "Track and field"],
+        correctAnswer: 3
+    },
+    {
+        question: "With which sport is Monica Seles associated?",
+        options: ["Motor Racing", "Swimming", "Table tennis", "Tennis"],
+        correctAnswer: 3
+    },
+    {
+        question: "In April 2003 Who Became The Oldest Man To Be Rated No1 In The World Tennis Association Rankings At The Age Of 33?",
+        options: ["Roger Federer", "Pete Sampras", "Andy Roddick", "Andre Agassi"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the name of the classic board game where players must collect properties and build houses and hotels?",
+        options: ["Life", "Risk", "Chess", "Monopoly"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which country won the 1938 FIFA World Cup, hosted in France?",
+        options: ["Germany", "Spain", "Brazil", "Italy"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which country won the 1986 FIFA World Cup, hosted in Mexico?",
+        options: ["France", "Brazil", "Argentina", "Italy"],
+        correctAnswer: 3
+    },
+    {
+        question: "With which sport is Michael Johnson associated?",
+        options: ["Hockey", "Table tennis", "Gymnastics", "Athletics"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these is a competition in Horse Racing?",
+        options: ["The Africa Cup of Nations", "The World Cup Sevens", "The Copa América", "The Grand National"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which country won the 1962 FIFA World Cup, hosted in Chile?",
+        options: ["Spain", "Italy", "West Germany", "Brazil"],
+        correctAnswer: 3
+    },
+    {
+        question: "With which sport is Wayne Rooney associated?",
+        options: ["Swimming", "Tennis", "Golf", "Football"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which Game Makes Use Of Hoops",
+        options: ["Tennis", "Badminton", "Billiards", "Croquet"],
+        correctAnswer: 3
+    },
+    {
+        question: "In snooker, what is the color of the last ball to be potted?",
+        options: ["White", "Red", "Pink", "Black"],
+        correctAnswer: 3
+    },
+    {
+        question: "What does the acronym \"NES\" stand for?",
+        options: ["Natural Emitting Screen", "Near Energy Source", "Nebulous Endocrine Station", "Nintendo Entertainment System"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these is a baseball team based in Washington?",
+        options: ["Washington Saints", "Washington Dolphins", "Washington Bucks", "Washington Nationals"],
+        correctAnswer: 3
+    },
+    {
+        question: "With which sport is Karch Kiraly associated?",
+        options: ["Cycling", "Golf", "Rugby Union", "Volleyball"],
+        correctAnswer: 3
+    },
+    {
+        question: "With which sport is Mark Spitz associated?",
+        options: ["Cycling", "Rowing", "Track and field", "Swimming"],
+        correctAnswer: 3
+    },
+]
