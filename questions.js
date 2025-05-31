@@ -306,3 +306,106 @@ let food_and_drink = [
         correctAnswer: 3
     },
 ]
+
+let general_knowledge = [
+    {
+        question: "Who was the man convicted of masterminding the 1969 LaBianca-Tate murders?",
+        options: ["Ed Gein", "Ted Bundy", "Jim Jones", "Charles Manson"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which word is defined as 'loudness and clarity of enunciation'?",
+        options: ["Doodle Sack", "Donkey Engine", "Lackadaisical", "Lamprophony"],
+        correctAnswer: 3
+    },
+    {
+        question: "What color is carmine?",
+        options: ["Yellow", "Blue", "Green", "Red"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the meaning of the word 'Vostok' in Russian?",
+        options: ["North", "West", "South", "East"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the name of the type of oven used to make pottery?",
+        options: ["An inferno", "A furnace", "A forge", "A kiln"],
+        correctAnswer: 3
+    },
+    {
+        question: "Green Room, Crystal Cathedral & Walking The Dog are all terms from what?",
+        options: ["Yoga", "Piano Playing", "Ballroom Dancing", "Surfing"],
+        correctAnswer: 3
+    },
+    {
+        question: "What body part are you said to have 'in the door' if you're lucky, and 'in the grave' if you're not?",
+        options: ["a hand", "an ear", "a nose", "a foot"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which -ism is used when something out of its proper historical context?",
+        options: ["Calvinism", "Cynicism", "Feudalism", "Anachronism"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the name of the university formerly known as Trinity College, which was named after a tobacco family that donated millions to the school?",
+        options: ["Harvard", "Yale", "Princeton", "Duke"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the meaning of the name of the constellation Corona Borealis?",
+        options: ["Great Light", "Brave Hunter", "Dazzling Forest", "Northern Crown"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which word is defined as 'A drop of mucus at the nose, whether produced by cold or otherwise'?",
+        options: ["Agastopia", "Blatherskite", "Tittynope", "Meldrop"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which word is defined as 'sad or miserable in appearance'?",
+        options: ["Ratoon", "Dragoman", "Bobsy-die", "Woebegone"],
+        correctAnswer: 3
+    },
+    {
+        question: "What Does The XP In The Operating System 'Windows XP' Actually Stand For?",
+        options: ["Expertise", "Extra Power", "Express", "Experience"],
+        correctAnswer: 3
+    },
+    {
+        question: "In phonetics, which of these is an example of a plosive sound?",
+        options: ["The y in 'yellow'", "The r in 'red'", "The z in 'zoo'", "The d in 'door'"],
+        correctAnswer: 3
+    },
+    {
+        question: "A 42 foot sperm whale has about 7 tons of __________ in it.",
+        options: ["Blood", "Sperm", "Water", "Oil"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the term for a list of places to visit on a journey?",
+        options: ["List", "Voyage", "Menu", "Itinerary"],
+        correctAnswer: 3
+    },
+    {
+        question: "According to the nursery rhyme, who, 'sat in the corner eating a Christmas Pie''?",
+        options: ["Humpty Dumpty", "Jack", "Happy Hungry Harry", "Little Jack Horner"],
+        correctAnswer: 3
+    },
+    {
+        question: "What type of word indicates an action?",
+        options: ["Adjective", "Noun", "Preposition", "Verb"],
+        correctAnswer: 3
+    },
+    {
+        question: "Although the Poodle is widely associated with France, in which country is it believed to have originated?",
+        options: ["Egypt", "India", "Spain", "Germany"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which word is defined as 'of, pertaining to, or resembling a hedgehog'?",
+        options: ["Sprunt", "Whippersnapper", "Frankenfood", "Erinaceous"],
+        correctAnswer: 3
+    },
+]
