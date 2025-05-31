@@ -615,3 +615,106 @@ let history = [
         correctAnswer: 3
     },
 ]
+
+let music = [
+    {
+        question: "Which musician had a hit in 1967 with \"Kentucky Woman\"?",
+        options: ["Elton John", "The Beatles", "The Rolling Stones", "Neil Diamond"],
+        correctAnswer: 3
+    },
+    {
+        question: "What function did the composer Franz Schubert perform at Beethoven's funeral?",
+        options: ["Eulogist", "Composer", "Bellringer", "Pallbearer"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which band was lead by Adam Levine?",
+        options: ["Styx", "Oasis", "Nickelback", "Maroon 5"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which American rock band released the album 'Morrison Hotel'?",
+        options: ["Styx", "The Pussycat Dolls", "Three 6 Mafia", "The Doors"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who released the album 'Tupelo honey'?",
+        options: ["Megadeth", "Boyz II Men", "Janet Jackson", "Van Morrison "],
+        correctAnswer: 3
+    },
+    {
+        question: "'Xylophone' Is Derived From The Greek Words For What?",
+        options: ["Multiple & Sound", "Wood & Tone", "Multiple & Tone", "Wood & Sound"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which female country singer had hits such as 'Jesus, Take the Wheel' and 'Some Hearts,' and also won 'American Idol'?",
+        options: ["Taylor Swift", "Miranda Lambert", "Faith Hill", "Carrie Underwood"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which song, originally recorded by Édith Piaf, was later covered by Grace Jones?",
+        options: ["Girls Just Want to Have Fun", "I Will Always Love You", "Borderline", "La Vie En Rose"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which did Roger Waters co-found?",
+        options: ["Wings", "Rudimental", "The Alan Parsons Project", "Pink Floyd"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which English rock band released the song 'Lady Madonna'?",
+        options: ["The Kinks", "The Rolling Stones", "Queen", "The Beatles"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which song begins with the lyrics: \"Marky got with Sharon / Sharon got Sherice / She was sharing Sharon's outlook / On the topic of disease / Mikey had a facial scar / And Bobby was a racist / They were all in love with dyin' / They were doing it in Texas...\"?",
+        options: ["Yo Home to Bel-Air", "What I Got by Sublime", "Let's Go Crazy by Prince and The Revolution", "Pepper by Butthole Surfers"],
+        correctAnswer: 3
+    },
+    {
+        question: "What type of instrument is a clarinet?",
+        options: ["Stringed", "Brass", "Percussion", "Woodwind"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who was the song 'Killing Me Softly' written about?",
+        options: ["Elvis Presley", "Prince", "Cliff Richard", "Don McLean"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which American singer, songwriter and dancer released the album 'Bad'?",
+        options: ["Nicki Minaj", "Neil Young", "Eric Clapton", "Michael Jackson"],
+        correctAnswer: 3
+    },
+    {
+        question: "What was the first Elvis Presley single released?",
+        options: ["Blue Suede Shoes", "Teddy Bear", "Hound Dog", "That's All Right, Mama"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which American music duo wrote the song 'El cóndor pasa'?",
+        options: ["Soinny & Cher", "Sam & Dave", "The Carpenters", "Simon & Garfunkel"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which musician wrote the song 'Knockin' on Heaven's Door'?",
+        options: ["Neil Young", "Eric Clapton", "Alanis Morissette", "Bob Dylan"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which musician released the studio album 'Light Years'?",
+        options: ["Madonna", "Mika", "Hikaru Utada", "Kylie Minogue"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which Finnish hard rock band released the album 'Deadache'?",
+        options: ["Nightwish", "Poets of the Fall", "Stratovarius", "Lordi"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which singer released the song 'Spinning Around'?",
+        options: ["Madonna", "Mika", "Hikaru Utada", "Kylie Minogue"],
+        correctAnswer: 3
+    },
+]
