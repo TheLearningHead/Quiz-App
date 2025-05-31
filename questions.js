@@ -512,3 +512,106 @@ let geography = [
         correctAnswer: 3
     },
 ]
+
+let history = [
+    {
+        question: "Who was stabbed by Cassius?",
+        options: ["Cleopatra", "Mark Anthony", "Marcus Crassus", "Julius Caesar"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who Said \"Will No-One Rid Me Of This Turbulent Priest\"?",
+        options: ["William I", "Richard III", "Henry VIII", "Henry II"],
+        correctAnswer: 3
+    },
+    {
+        question: "What started in 1849 when gold was discovered at Sutter's Mill?",
+        options: ["The American Civil War", "The Cuban Revolution", "The Louisiana Purchase", "The California Gold Rush"],
+        correctAnswer: 3
+    },
+    {
+        question: "The 18th century was the age of which major philosophical movement?",
+        options: ["The Reformation", "The Renaissance", "The Industrial Revolution", "The Enlightenment"],
+        correctAnswer: 3
+    },
+    {
+        question: "What medieval social system was based on the holding of land in exchange for labor?",
+        options: ["Polygamy", "Communism", "Oligarchy", "Feudalism"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who made the first phone call to the moon?",
+        options: ["John F Kennedy", "Gerald Ford", "Lyndon B Johnson", "Richard Nixon"],
+        correctAnswer: 3
+    },
+    {
+        question: "In which year did the communists come into to power in Beijing following the Chinese Civil War?",
+        options: ["1941", "1970", "1923", "1949"],
+        correctAnswer: 3
+    },
+    {
+        question: "What was the name given to a knight's student?",
+        options: ["Tourney", "Knight errant", "Groom", "Squire"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who was the 1st president of the USA, in term during the period 1789–1797?",
+        options: ["Chester Arthur", "Ulysses S. Grant", "Millard Fillmore", "George Washington "],
+        correctAnswer: 3
+    },
+    {
+        question: "Who won the 1979 Nobel Peace Prize for her work among the poor?",
+        options: ["Florence Nightingale", "Marie Curie", "Margaret Thatcher", "Mother Teresa"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who was the 19th president of the USA, in term during the period 1877–1881?",
+        options: ["Harry S. Truman", "George W. Bush", "George Washington ", "Rutherford B. Hayes"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which British queen did not go out in public for three years after the death of her husband in 1861?",
+        options: ["Queen Elizabeth II", "Queen Mary", "Queen Anne", "Queen Victoria"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who was the 43rd president of the USA, in term during the period 2001–2009?",
+        options: ["Gerald Ford", "Thomas Jefferson ", "Franklin D. Roosevelt", "George W. Bush"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these was a grandson of Ghengis Khan?",
+        options: ["Timor Khan", "Genghis Auguste", "Genghis Xiaoping", "Kublai Khan"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who Had An 80's Hit With The Song 'Just The Two of Us,'? ",
+        options: ["Michael Jackson", "Luther Vandross", "Marvin Gaye", "Bill Withers"],
+        correctAnswer: 3
+    },
+    {
+        question: "What notorious event occurred on the 24th October 1929?",
+        options: ["The Hindenberg Disaster", "The Assassination of John F. Kennedy", "The Nazi Invasion of Poland", "The Wall Street Crash"],
+        correctAnswer: 3
+    },
+    {
+        question: "How Many Colonies Signed The American Declaration Of Independence?",
+        options: ["4", "50", "49", "13"],
+        correctAnswer: 3
+    },
+    {
+        question: "When did Alan Turing break the Enigma code?",
+        options: ["1921", "1880", "1972", "1945"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who was the monarch of England during the time period 1066-1087?",
+        options: ["Anne", "Richard II", "William II", "William I"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which Queen of France was beheaded in 1793?",
+        options: ["Eleanor of Aquitaine", "Margaret of Provence", "Maria Theresa", "Marie Antoinette"],
+        correctAnswer: 3
+    },
+]
