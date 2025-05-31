@@ -811,3 +811,111 @@ let science = [
         correctAnswer: 3
     },
 ]
+
+let society_and_culture = [
+    {
+        question: "In Spanish, what is the meaning of the word 'uno'?",
+        options: ["Yellow", "Eight", "Ten", "One"],
+        correctAnswer: 3
+    },
+    {
+        question: "What Toy Still Hugely Popular Today First Went On Sale In 1959 Costing Just $3",
+        options: ["GI Joe", "Stretch Armstrong", "Beanie Babies", "Barbie"],
+        correctAnswer: 3
+    },
+    {
+        question: "In which famous fairy tale do two children fall into the hands of a witch after being abandoned in a forest?",
+        options: ["The Magic Flute", "Little Red Riding Hood", "The Barber of Seville", "Hansel and Gretel"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the term given to the act of lying in court?",
+        options: ["Obstruction", "Suborning", "Fraud", "Perjury"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who is the Greek equivalent of the roman god Jupiter?",
+        options: ["Hercules", "Ares", "Hades", "Zeus"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which philosopher famously said 'The only thing I know is that I know nothing'?",
+        options: ["Thomas Hobbes", "Bertrand Russell", "Immanuel Kant", "Socrates"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which philosopher famously said 'The function of prayer is not to influence God, but rather to change the nature of the one who prays'?",
+        options: ["Ludwig Wittgenstein", "Epictetus", "Bertrand Russell", "Søren Kierkegaard"],
+        correctAnswer: 3
+    },
+    {
+        question: "What do the proletarians \"have nothing to lose but\", according to The Communist Manifesto?",
+        options: ["Their shirts", "Their homes", "Their families", "Their chains"],
+        correctAnswer: 3
+    },
+    {
+        question: "In what language was the Communist Manifesto written?",
+        options: ["English", "Russian", "French", "German"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who Is Known As The Father Of Medicine?",
+        options: ["Leonidas", "Euclid", "Archimedes", "Hippocrates"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the marketing slogan of Levis?",
+        options: ["It's Style", "Between love and madness lies obsession", "Maybe she's born with it", "Quality never goes out of style"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which word comes from a Greek word meaning 'imitator of all'?",
+        options: ["Colosseum", "Theatrical", "Cabaret", "Pantomime"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who of these was a key figure of Jewish/Christian history?",
+        options: ["Mohammed", "Frodo", "Buddha", "Moses"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these people was an Italian explorer who landed in America?",
+        options: ["Napoleon Bonaparte", "Martin Luther", "Marco Polo", "Christopher Columbus"],
+        correctAnswer: 3
+    },
+    {
+        question: "The Polo is a model of car made by which manufacturer?",
+        options: ["Renault", "Audi", "Toyota", "Volkswagen"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the name of the language that is primarily spoken in Brazil?",
+        options: ["Spanish", "Portuguese", "French", "English"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which language family does the Amharic language belong to?",
+        options: ["Sino-Tibetan", "Dravidian", "Japonic", "Afroasiatic"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these gestures  is a commonly used when greeting in Thailand?",
+        options: ["Fist bump", "Handshake", "Khǎawng dtàm", "Wai"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of the following describes Albert Einstein?",
+        options: ["Inventor of the telephone.", "38th President of the US.", "One of the principal interpreters of Confucianism.", "Scientist who discovered The Theory of Relativity."],
+        correctAnswer: 3
+    },
+    {
+        question: "In Portuguese, what is the word for for 'black'?",
+        options: ["Nero", "Zwart", "Azul", "Negro"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these people was an influential figure in Sunni Islam?",
+        options: ["Mencius", "Lao Tzu", "Nabil Abou-Harb", "Umar ibn al-Khattab"],
+        correctAnswer: 3
+    },
+]
