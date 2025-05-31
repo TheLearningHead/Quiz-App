@@ -409,3 +409,106 @@ let general_knowledge = [
         correctAnswer: 3
     },
 ]
+
+let geography = [
+    {
+        question: "Which of these cities is in South Korea?",
+        options: ["Chittagong", "Ulaanbaatar", "Colombo", "Seoul"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these countries borders Portugal?",
+        options: ["Morocco", "Andorra", "France", "Spain"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these countries borders India?",
+        options: ["Tajikistan", "Kyrgyzstan", "Thailand", "Bhutan"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these cities is in Chile?",
+        options: ["Buenos Aires", "San Salvador", "Lima", "Santiago"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these colors would you find on the flag of Romania?",
+        options: ["Black", "Maroon", "Orange", "Yellow"],
+        correctAnswer: 3
+    },
+    {
+        question: "Where would you find the city of Tunis?",
+        options: ["Morocco", "Kenya", "Sudan", "Tunisia"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these countries has red on its flag?",
+        options: ["Ireland", "Bosnia and Herzegovina", "Nigeria", "Belarus"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the capital city of Guyana?",
+        options: ["Pristina", "Nouakchott", "Port Vila", "Georgetown"],
+        correctAnswer: 3
+    },
+    {
+        question: "In which country would you find the UNESCO World Heritage site of Rani-ki-Vav?",
+        options: ["Hungary", "Israel", "Russia", "India"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which site in North America was named after the Mohawk Indian word meaning \"thunder of waters\"?",
+        options: ["Lake Huron", "Yosemite", "Appalachian Mountains", "Niagara falls"],
+        correctAnswer: 3
+    },
+    {
+        question: "In which country is the city of Shenzhen?",
+        options: ["Philippines", "Malaysia", "Cambodia", "China"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which region of the world uses '.ve' at the end of its web addresses?",
+        options: ["Vietnam", "Montenegro", "Vanuatu", "Venezuela"],
+        correctAnswer: 3
+    },
+    {
+        question: "In Which Modern Day Country Would You Find The Region Known As Transylvania?",
+        options: ["Poland", "Ireland", "France", "Romania"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the capital city of Ethiopia?",
+        options: ["Bishkek", "Chisinau", "Sana'a", "Addis Ababa"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these cities is in Netherlands?",
+        options: ["Rome", "Düsseldorf", "Zürich", "Amsterdam"],
+        correctAnswer: 3
+    },
+    {
+        question: "What bay is connected to the Pacific Ocean by the three-mile-long Golden Gate Strait?",
+        options: ["Monterey Bay", "Santa Monica Bay", "San Diego Bay", "San Francisco Bay"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these cities is in Croatia?",
+        options: ["Lisbon", "Geneva", "Amsterdam", "Dubrovnik"],
+        correctAnswer: 3
+    },
+    {
+        question: "Which of these Russian cities is not located in European Russia?",
+        options: ["Moscow", "Saint Petersburg", "Nizhny Novgorod", "Vladivostok"],
+        correctAnswer: 3
+    },
+    {
+        question: "Seoul is the capital city of which country?",
+        options: ["Vanuatu", "Peru", "Sweden", "South Korea"],
+        correctAnswer: 3
+    },
+    {
+        question: "What's the most southerly of these cities?",
+        options: ["Bordeaux", "Seattle", "Budapest", "Toronto "],
+        correctAnswer: 3
+    },
+]
