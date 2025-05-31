@@ -718,3 +718,96 @@ let music = [
         correctAnswer: 3
     },
 ]
+
+let science = [
+    {
+        question: "The effect of light on chemicals",
+        options: ["Animal behaviour", "Ticks and mites", "Fresh water environments", "The effect of light on chemicals"],
+        correctAnswer: 3
+    },
+    {
+        question: "Race",
+        options: ["Parasites", "Ethics", "Rocks", "Race"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is Ethnology the study of?",
+        options: ["Animal behaviour", "Ticks and mites", "Fresh water environments", "The effect of light on chemicals"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the chemical sodium chloride often used for?",
+        options: ["It is used to relieve pain.", "It is used in thermometers, thermostats, barometers", "It is used in nuclear reactors, as a neutron moderator.", "It is commonly used as a condiment and food preservative."],
+        correctAnswer: 3
+    },
+    {
+        question: "What is Meteorology the study of?",
+        options: ["animal diseases", "hair and scalp", "human beings killing other human beings", "weather"],
+        correctAnswer: 3
+    },
+    {
+        question: "In experiments, what is the name of the group that does not receive the treatment?",
+        options: ["Test", "Experimental", "Base", "Control"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the word for a male giraffe?",
+        options: ["A Boar", "A Rooster", "A Drake", "A Bull"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who created an audiometer to detect vestigial hearing in the deaf, among other inventions?",
+        options: ["Thomas Edison", "Nikola Tesla", "Benjamin Franklin", "Alexander Graham Bell"],
+        correctAnswer: 3
+    },
+    {
+        question: "In the human body, what is the name given to glands responsible for producing hormones?",
+        options: ["Eccrine glands", "Salivary glands", "Mammary glands", "Endocrine glands"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the medical name for the collarbone?",
+        options: ["Femur", "Ulna", "Humerus", "Clavicle"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who is known as the father of genetics?",
+        options: ["Alexander Graham Bell", "Thomas Edison", "Charles Darwin", "Gregor Mendel"],
+        correctAnswer: 3
+    },
+    {
+        question: "What word refers to distortion caused by a loop in a sound system?",
+        options: ["Echo", "Resonance", "Interference", "Feedback"],
+        correctAnswer: 3
+    },
+    {
+        question: "What type of oven did Percy Spencer invent after a magnetron melted his candy bar?",
+        options: ["A toaster oven", "A convection oven", "A slow cooker", "A microwave"],
+        correctAnswer: 3
+    },
+    {
+        question: "Java",
+        options: ["Flark", "Goku", "Anon", "Java"],
+        correctAnswer: 3
+    },
+    {
+        question: "How does a scout bee communicate to other bees about the location of flowers?",
+        options: ["Buzzing", "Singing", "Whistling", "Dancing"],
+        correctAnswer: 3
+    },
+    {
+        question: "With what body part is otology involved?",
+        options: ["Nose", "Mouth", "Eyes", "Ear"],
+        correctAnswer: 3
+    },
+    {
+        question: "What is the circular cap on a mushroom called?",
+        options: ["Stipe", "Gills", "Rhizome", "Pileus"],
+        correctAnswer: 3
+    },
+    {
+        question: "Who invented the centigrade scale?",
+        options: ["Celso de Gama", "Max Gradel", "Hoff Zimmerman", "Anders Celsius"],
+        correctAnswer: 3
+    },
+]
