@@ -854,6 +854,10 @@ h1::after {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
+    .container, .ques-container, .results {
+        margin: auto 10px;
+    }
+
     .ques-container {
         padding: 30px 20px 25px 20px;
     }
@@ -901,3 +905,20 @@ h1::after {
     }
 }
 
+.warning-popup{
+    background: #0f1225;
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border-radius: 16px;
+    font-family: 'Poppins', 'Segoe UI', 'Roboto', Arial, sans-serif;
+    border: 1.5px solid #a777e3;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+    animation: warningPopupFadeIn 0.4s;
+}
+
+@keyframes warningPopupFadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}

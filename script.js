@@ -130,7 +130,7 @@ function showQuestion() {
         button.addEventListener('click', () => {
             // Remove selected class from all options
             optionsButtons.forEach(btn => btn.classList.remove('selected'));
-            
+
             // Add selected class to the clicked option
             button.classList.add('selected');
             selectedOption = button;
@@ -177,7 +177,15 @@ function showQuestion() {
             }, { once: true }); // Use { once: true } to ensure the event listener is removed after first use
         }
         else {
-            alert('Please select an option first!');
+            Swal.fire({
+                title: "Warning!",
+                text: "Please select an option first!",
+                icon: "warning",
+                confirmButtonText: "Ok",
+                customClass:{
+                    popup: 'warning-popup',
+                }
+            });
         }
     });
 }
