@@ -1,19 +1,19 @@
-const form = document.querySelector('.user-form')
-const userName = document.getElementById('user-name')
-const quesCountButtons = document.querySelectorAll('.ques-count-buttons button') // Get all buttons in the question count section in the form of a NodeList
-const quesCategory = document.getElementById('ques-category')
-const container = document.querySelector('.container')
-const quesContainer = document.querySelector('.ques-container')
+const form = document.querySelector('.user-form');
+const userName = document.getElementById('user-name');
+const quesCountButtons = document.querySelectorAll('.ques-count-buttons button'); // Get all buttons in the question count section in the form of a NodeList
+const quesCategory = document.getElementById('ques-category');
+const container = document.querySelector('.container');
+const quesContainer = document.querySelector('.ques-container');
 
-container.style.transform = 'translateZ(20px)'
-quesContainer.style.transform = 'translateZ(20px)'
+container.style.transform = 'translateZ(20px)';
+quesContainer.style.transform = 'translateZ(20px)';
 
-let userNameValue = ''
-let selectedQuestionCount = 5 // Default question count
-let quesCategoryValue = 'mixed' // Default question category
-let currentQuestionIndex = 0
-let score = 0
-let questions = []
+let userNameValue = '';
+let selectedQuestionCount = 5; // Default question count
+let quesCategoryValue = 'mixed'; // Default question category
+let currentQuestionIndex = 0;
+let score = 0;
+let questions = [];
 
 // Set default selected for 5 questions
 quesCountButtons.forEach((btn, idx) => {
@@ -40,7 +40,7 @@ form.addEventListener('submit', (e) => {
     container.style.display = 'none';
     quesContainer.style.display = 'flex';
     showQuestion();
-})
+});
 
 // Function to prepare questions based on selected category
 function prepareQuestions() {
@@ -56,7 +56,7 @@ function prepareQuestions() {
             ...music,
             ...society_and_culture,
             ...sport_and_leisure
-        ]
+        ];
 
         // Shuffle the array
         shuffleArray(allQuestions);
@@ -158,7 +158,7 @@ function showQuestion() {
             }
             else{
                 selectedOption.classList.add('wrong');
-                optionsButtons[correctIndex].classList.add('correct')
+                optionsButtons[correctIndex].classList.add('correct');
             }
 
             // Change lock button to next button
@@ -177,5 +177,79 @@ function showQuestion() {
         else{
             alert('Please select an option first!');
         }
+    });
+}
+
+// Function to show results
+function showResults(){
+    // Calculate percentage
+    const percentage = Math.round((score / questions.length) * 100);
+
+    // Determine result message and class based on percentage
+    let resultMessage, resultClass;
+    
+    if (percentage >= 80) {
+        resultMessage = 'Excellent!';
+        resultClass = 'excellent';
+    } else if (percentage >= 60) {
+        resultMessage = 'Good job!';
+        resultClass = 'good';
+    } else if (percentage >= 40) {
+        resultMessage = 'Not bad!';
+        resultClass = 'average';
+    } else {
+        resultMessage = 'Keep practicing!';
+        resultClass = 'poor';
+    }
+
+    // Create HTML for results
+    quesContainer.innerHTML = `
+        <div class="results">
+            <h2>Quiz Results</h2>
+            <div class="user-info">
+                <!-- Display the user's name in the results section -->
+                <span class="user-name-display">${userNameValue}</span>
+                
+                <!-- Display the selected category in a readable format: -->
+                <!-- - Replaces underscores with spaces (e.g., "arts_and_literature" → "arts and literature") -->
+                <!-- - Capitalizes the first letter of each word (e.g., "arts and literature" → "Arts And Literature") -->
+                <span class="category-display">${quesCategoryValue.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>
+            </div>
+            <div class="score-circle ${resultClass}">
+                <div class="percentage">${percentage}%</div>
+                <div class="score-text">${score}/${selectedQuestionCount}</div>
+            </div>
+            <div class="result-message ${resultClass}">${resultMessage}</div>
+            <div class="result-actions">
+                <button id="restart-quiz" class="action-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v6h6"></path><path d="M3 13a9 9 0 1 0 3-7.7L3 8"></path></svg>
+                    Restart Quiz
+                </button>
+                <button id="new-quiz" class="action-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3zM12 8v8m-4-4h8"></path></svg>
+                    New Quiz
+                </button>
+            </div>
+        </div>
+    `;
+
+    // Add event listeners to action buttons
+    const restartQuizBtn = document.getElementById('restart-quiz');
+    const newQuizBtn = document.getElementById('new-quiz');
+
+    restartQuizBtn.addEventListener('click', () => {
+        // Reset quiz with same settings
+        currentQuestionIndex = 0;
+        score = 0;
+        prepareQuestions();
+        showQuestion();
+    });
+    
+    newQuizBtn.addEventListener('click', () => {
+        // Reset everything and show form
+        currentQuestionIndex = 0;
+        score = 0;
+        container.style.display = 'block';
+        quesContainer.style.display = 'none';
     });
 }
