@@ -477,10 +477,10 @@ h1::after {
     box-shadow: 0 15px 35px rgba(110, 142, 251, 0.35);
 }
 
-.ques-container{
+.ques-container {
     position: relative;
     z-index: 1;
-    width: 450px;
+    width: 550px;
     max-width: 90vw;
     margin: 0 auto;
     background: rgba(15, 18, 37, 0.7);
@@ -495,4 +495,409 @@ h1::after {
     transform: translateZ(20px);
     overflow: hidden;
     display: none;
+    flex-direction: column;
 }
+
+.ques-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+/* Question Header Styling */
+.question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.question-count {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #a777e3;
+    background: rgba(35, 36, 58, 0.5);
+    padding: 8px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Question Styling */
+.question {
+    margin-bottom: 30px;
+}
+
+.question h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0;
+}
+
+/* Options Styling */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(35, 36, 58, 0.5);
+    border: 1px solid rgba(110, 142, 251, 0.2);
+    border-radius: 14px;
+    padding: 16px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+    overflow: hidden;
+}
+
+.option::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: all 0.5s ease;
+}
+
+.option:hover::before {
+    left: 100%;
+}
+
+.option:hover {
+    background: rgba(35, 36, 58, 0.7);
+    border-color: rgba(110, 142, 251, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.option-marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: rgba(110, 142, 251, 0.2);
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #a777e3;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.option:hover .option-marker {
+    background: rgba(110, 142, 251, 0.3);
+    color: #fff;
+}
+
+.option-text {
+    flex-grow: 1;
+}
+
+.option:disabled{
+    transform: none;
+}
+
+/* Selected, Correct and Wrong Answer Styling */
+.option.selected {
+    background: rgba(110, 142, 251, 0.2);
+    border-color: rgba(110, 142, 251, 0.6);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.option.selected .option-marker {
+    background: rgba(110, 142, 251, 0.8);
+    color: #fff;
+}
+
+.option.correct {
+    background: rgba(46, 213, 115, 0.2);
+    border-color: rgba(46, 213, 115, 0.6);
+}
+
+.option.correct .option-marker {
+    background: rgba(46, 213, 115, 0.8);
+    color: #fff;
+}
+
+.option.wrong {
+    background: rgba(255, 82, 82, 0.2);
+    border-color: rgba(255, 82, 82, 0.6);
+}
+
+.option.wrong .option-marker {
+    background: rgba(255, 82, 82, 0.8);
+    color: #fff;
+}
+
+/* Navigation Buttons */
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%);
+    border: none;
+    border-radius: 14px;
+    padding: 14px 30px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 180px;
+    box-shadow: 0 8px 25px rgba(110, 142, 251, 0.25);
+}
+
+.nav-btn:hover:not(:disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(110, 142, 251, 0.35);
+}
+
+.nav-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.nav-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Results Styling */
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.results h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    background: linear-gradient(90deg, #6e8efb, #a777e3, #6e8efb);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 8s linear infinite;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.user-name-display {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.category-display {
+    font-size: 1rem;
+    color: #a777e3;
+}
+
+.score-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+    background: rgba(35, 36, 58, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.score-circle::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.1));
+    z-index: -1;
+}
+
+.score-circle.excellent {
+    background: linear-gradient(135deg, rgba(46, 213, 115, 0.2), rgba(46, 213, 115, 0.1));
+    border: 2px solid rgba(46, 213, 115, 0.4);
+}
+
+.score-circle.good {
+    background: linear-gradient(135deg, rgba(86, 204, 242, 0.2), rgba(86, 204, 242, 0.1));
+    border: 2px solid rgba(86, 204, 242, 0.4);
+}
+
+.score-circle.average {
+    background: linear-gradient(135deg, rgba(255, 184, 0, 0.2), rgba(255, 184, 0, 0.1));
+    border: 2px solid rgba(255, 184, 0, 0.4);
+}
+
+.score-circle.poor {
+    background: linear-gradient(135deg, rgba(255, 82, 82, 0.2), rgba(255, 82, 82, 0.1));
+    border: 2px solid rgba(255, 82, 82, 0.4);
+}
+
+.percentage {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.score-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 5px;
+}
+
+.result-message {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 10px 25px;
+    border-radius: 12px;
+}
+
+.result-message.excellent {
+    color: #2ed573;
+    background: rgba(46, 213, 115, 0.1);
+}
+
+.result-message.good {
+    color: #56ccf2;
+    background: rgba(86, 204, 242, 0.1);
+}
+
+.result-message.average {
+    color: #ffb800;
+    background: rgba(255, 184, 0, 0.1);
+}
+
+.result-message.poor {
+    color: #ff5252;
+    background: rgba(255, 82, 82, 0.1);
+}
+
+.result-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(35, 36, 58, 0.5);
+    border: 1px solid rgba(110, 142, 251, 0.2);
+    border-radius: 14px;
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%);
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(110, 142, 251, 0.25);
+}
+
+.action-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .ques-container {
+        padding: 30px 20px 25px 20px;
+    }
+    
+    .question h2 {
+        font-size: 1.1rem;
+    }
+    
+    .option {
+        padding: 12px 15px;
+        font-size: 0.95rem;
+    }
+    
+    .option-marker {
+        width: 28px;
+        height: 28px;
+        font-size: 0.8rem;
+    }
+    
+    .nav-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .score-circle {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .percentage {
+        font-size: 2.5rem;
+    }
+    
+    .score-text {
+        font-size: 1rem;
+    }
+    
+    .result-message {
+        font-size: 1.3rem;
+    }
+    
+    .action-btn {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+}
+
