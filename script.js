@@ -103,16 +103,16 @@ function showQuestion() {
                 <span>Question ${currentQuestionIndex + 1}/${selectedQuestionCount}</span>
             </div>
         </div>
-        <div class="question>
+        <div class="question">
             <h2>${currentQuestion.question}</h2>
         </div>
         <div class="options">
             ${currentQuestion.options.map((option, index) => `
-                <button class="option" data-index="${index}>
-                    <span class="option-marker">${String.fromCharCode(65 + index)}></span>
+                <button class="option" data-index="${index}">
+                    <span class="option-marker">${String.fromCharCode(65 + index)}</span>
                     <span class="option-text">${option}</span>
                 </button>
-            `)}
+            `).join('')}
         </div>
         <div class="navigation">
             <button class="nav-btn" id="lock-btn">
@@ -130,6 +130,8 @@ function showQuestion() {
         button.addEventListener('click', () => {
             // Remove selected class from all options
             optionsButtons.forEach(btn => btn.classList.remove('selected'));
+            
+            // Add selected class to the clicked option
             button.classList.add('selected');
             selectedOption = button;
         });
@@ -139,9 +141,9 @@ function showQuestion() {
     const lockBtn = document.getElementById('lock-btn');
 
     lockBtn.addEventListener('click', () => {
-        if(selectedOption){
+        if (selectedOption) {
             // Disable all option buttons
-            optionsButtons.forEach(button =>{
+            optionsButtons.forEach(button => {
                 button.disabled = true;
             })
 
@@ -152,11 +154,11 @@ function showQuestion() {
             const correctIndex = questions[currentQuestionIndex].correctAnswer;
 
             // Check if the selected option is correct
-            if(selectedIndex === correctIndex){
+            if (selectedIndex === correctIndex) {
                 selectedOption.classList.add('correct');
                 score++;
             }
-            else{
+            else {
                 selectedOption.classList.add('wrong');
                 optionsButtons[correctIndex].classList.add('correct');
             }
@@ -169,25 +171,25 @@ function showQuestion() {
             lockBtn.id = 'next-btn';
 
             //Add event listener to next button
-            lockBtn.addEventListener('click', ()=>{
+            lockBtn.addEventListener('click', () => {
                 currentQuestionIndex++;
                 showQuestion();
             }, { once: true }); // Use { once: true } to ensure the event listener is removed after first use
         }
-        else{
+        else {
             alert('Please select an option first!');
         }
     });
 }
 
 // Function to show results
-function showResults(){
+function showResults() {
     // Calculate percentage
     const percentage = Math.round((score / questions.length) * 100);
 
     // Determine result message and class based on percentage
     let resultMessage, resultClass;
-    
+
     if (percentage >= 80) {
         resultMessage = 'Excellent!';
         resultClass = 'excellent';
@@ -244,7 +246,7 @@ function showResults(){
         prepareQuestions();
         showQuestion();
     });
-    
+
     newQuizBtn.addEventListener('click', () => {
         // Reset everything and show form
         currentQuestionIndex = 0;
