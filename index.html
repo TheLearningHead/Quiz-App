@@ -19,6 +19,7 @@
     </div>
     <div class="container">
         <h1>Welcome to Quiz Wizard</h1>
+        <!-- Form for user input to start the quiz -->
         <form action="" class="user-form">
             <div class="user-name">
                 <label for="user-name">Enter your name:</label>
@@ -36,6 +37,7 @@
             <div class="ques-category">
                 <label for="ques-category">Select question category:</label>
                 <select name="ques-category" id="ques-category">
+                    <!-- Dropdown options for selecting quiz category -->
                     <option value="mixed" selected>Mixed</option>
                     <option value="arts_and_literature">Arts and Literature</option>
                     <option value="film_and_tv">Film and TV</option>
@@ -48,10 +50,12 @@
                     <option value="sport_and_leisure">Sport and Leisure</option>
                 </select>
             </div>
+            <!-- Button to start the quiz after user input -->
             <button type="submit" id="start-quiz">Start Quiz</button>
         </form>
     </div>
 
+    <!-- Dynamic container for quiz questions and results -->
     <div class="ques-container"></div>
 
     <script src="questions.js"></script>
