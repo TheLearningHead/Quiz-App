@@ -42,8 +42,9 @@ Quiz Wizard is a web-based quiz application designed to provide an engaging and 
 
 1. **Clone or Download** this repository.
 2. Open `index.html` in your favorite browser.
-3. Enter your name, select the number of questions and category, then click **Start Quiz**.
-4. Answer the questions, lock your answer, and see your results at the end!
+3. Or simply use it online at: [quiz-wizard-eight.vercel.app](https://quiz-wizard-eight.vercel.app/)
+4. Enter your name, select the number of questions and category, then click **Start Quiz**.
+5. Answer the questions, lock your answer, and see your results at the end!
 
 ---
 
