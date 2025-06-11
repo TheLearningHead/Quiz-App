@@ -39,7 +39,7 @@ form.addEventListener('submit', (e) => {
     // Hide the form container and show the question container
     container.style.display = 'none';
     quesContainer.style.display = 'flex';
-    showQuestions();
+    showQuestion();
 })
 
 // Function to prepare questions based on selected category
@@ -87,7 +87,7 @@ function shuffleArray(array) {
 }
 
 // Function to show current question
-function showQuestions() {
+function showQuestion() {
     if (currentQuestionIndex >= questions.length) {
         // Quiz completed, show results
         showResults();
@@ -139,9 +139,43 @@ function showQuestions() {
     const lockBtn = document.getElementById('lock-btn');
 
     lockBtn.addEventListener('click', () => {
-        if(selectedOption){}
+        if(selectedOption){
+            // Disable all option buttons
+            optionsButtons.forEach(button =>{
+                button.disabled = true;
+            })
+
+            // Get selected option index
+            const selectedIndex = parseInt(selectedOption.dataset.index);
+
+            // Get correct answer index
+            const correctIndex = questions[currentQuestionIndex].correctAnswer;
+
+            // Check if the selected option is correct
+            if(selectedIndex === correctIndex){
+                selectedOption.classList.add('correct');
+                score++;
+            }
+            else{
+                selectedOption.classList.add('wrong');
+                optionsButtons[correctIndex].classList.add('correct')
+            }
+
+            // Change lock button to next button
+            lockBtn.innerHTML = `
+                Next
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            `;
+            lockBtn.id = 'next-btn';
+
+            //Add event listener to next button
+            lockBtn.addEventListener('click', ()=>{
+                currentQuestionIndex++;
+                showQuestion();
+            }, { once: true }); // Use { once: true } to ensure the event listener is removed after first use
+        }
         else{
             alert('Please select an option first!');
         }
-    })
+    });
 }
